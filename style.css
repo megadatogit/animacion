@@ -1,0 +1,177 @@
+/* reseteo de estilos */
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: relative;
+}
+
+/* mantiene el menu visible en todo momento de la navegación */
+
+.cntMenu {
+    position: fixed;
+    width: 15%;
+    min-width: 150px;
+    height: 100vh;
+    border-right: 1px solid #00749A;
+    color: dimgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    & nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+
+        & p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        & a {
+            text-decoration: none;
+            color: dimgrey;
+            width: 100%;
+            text-align: start;
+            padding: 1rem 1.5rem;
+            transition: color 0.7s ease;
+            position: relative;
+            overflow: hidden;
+            
+            &:hover {
+                line-height: unset;
+                color: #00749A;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* transición visual (línea inferior) de la seleción en menu */
+
+& a::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #00749A;
+    bottom: 15%;
+    transition: width 0.3s ease;
+}
+
+
+
+.cntImg {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    & img {
+        width: 65%;
+        text-align: center;
+    }
+}
+
+.cntAnimaciones {
+    width: 100%;
+    height: 100%;
+    margin-left: 15%;
+}
+
+hr {
+    width: 65%;
+    margin: 0 auto;
+    border: 1px solid rgb(243, 242, 242);
+}
+
+#presentacion,
+#animacion1,
+#animacion2,
+#animacion3,
+#animacion4,
+#animacion5,
+#notfound,
+#conclusiones {
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+}
+
+#presentacion {background-color: color-mix(in srgb, white  100%, #00749A 0%);}
+#animacion1   {background-color: color-mix(in srgb, white   90%, #00749A 5%);}
+#animacion2   {background-color: color-mix(in srgb, white   80%, #00749A 10%);}
+#animacion3   {background-color: color-mix(in srgb, white   70%, #00749A 15%);}
+#animacion4   {background-color: color-mix(in srgb, white   60%, #00749A 20%);}
+#animacion5   {background-color: color-mix(in srgb, white   50%, #00749A 25%);}
+#notfound     {background-color: color-mix(in srgb, white   40%, #00749A 30%);}
+#conclusines  {background-color: color-mix(in srgb, white   30%, #00749A 35%);}
+
+/* Presentación */
+#presentacion {
+    text-align: end;
+}
+
+#presentacion > h2 { line-height: 1.5;}
+
+#presentacion > p { 
+    text-align: start;
+    margin: 50px 70px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#presentacion > ul { 
+    text-align: start;
+    margin-right: 70px;
+    & li {
+        margin-left: 90px;
+        list-style: none;
+        line-height: 2.5;
+    }
+}
+
+.actividad p:nth-child(1){
+    text-align: start;
+}
+.actividad p:nth-child(2){
+    text-align: justify;
+    border-top: 2px double #00749A;
+    border-bottom: 2px double #00749A;
+    padding: 30px 0;
+}
+.actividad > p {
+    margin-top: 50px;
+    line-height: 1.5;
+    font-style: italic;
+    color: #00749A;
+}
+
+/* Animación 1 */
+
+
+/* Animación 2 */
+
+
+/* Animación 3 */
+
+
+/* Animación 4 */
+
+
+/* Animación 5 */
