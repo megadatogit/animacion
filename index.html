@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="//campusvirtual.mexico.unir.net/pluginfile.php/3/theme_proeducaboost/favicon/1747996928/favicon.ico">
+    <link rel="shortcut icon"
+        href="//campusvirtual.mexico.unir.net/pluginfile.php/3/theme_proeducaboost/favicon/1747996928/favicon.ico">
     <link rel="stylesheet" href="./style.css">
     <title>Actividad 2 Animación</title>
 </head>
+
 <body>
     <!-- Contenedor para posicion fixed en menu -->
     <div class="cntMenu">
@@ -26,7 +29,7 @@
     <!-- Contenedores -->
 
     <div class="cntAnimaciones">
-        
+
         <!-- Caratula -->
         <div id="presentacion" class="cntAnima">
             <h2>Maestria. Diseño de Interfaces Web / 1er. Semestre / Actividad grupal</h2>
@@ -41,43 +44,163 @@
             <div class="actividad">
                 <p><strong>Actividad</strong></p>
                 <p>
-                    Descripción de la actividad.											
-											
-En equipo diseñaran la interfaz de la página de inicio y la página de error 404 de un sitio web (el tema será seleccionado por el equipo).											
-La interfaz debe contener al menos cinco iconos (por ejemplo: redes sociales, carrito de compra, contacto, botones, etc.) y estos deben ser animados con la herramienta SVGator vista en clase.											
-A su vez, se debe desarrollar la página de error 404 y, como elemento central, debe tener un SVG animado. La animación puede ser desarrollada con SVGator.											
-La entrega se debe realizar en formato ZIP y debe incluir toda la carpeta de desarrollo, es decir, los archivos HTML, CSS y SVG utilizados para la creación de la interfaz.						Descripción de la actividad											
-											
-En equipo diseñaran la interfaz de la página de inicio y la página de error 404 de un sitio web (el tema será seleccionado por el equipo).											
-La interfaz debe contener al menos cinco iconos (por ejemplo: redes sociales, carrito de compra, contacto, botones, etc.) y estos deben ser animados con la herramienta SVGator vista en clase.											
-A su vez, se debe desarrollar la página de error 404 y, como elemento central, debe tener un SVG animado. La animación puede ser desarrollada con SVGator.											
-La entrega se debe realizar en formato ZIP y debe incluir toda la carpeta de desarrollo, es decir, los archivos HTML, CSS y SVG utilizados para la creación de la interfaz.											
+                    Descripción de la actividad.
+
+                    En equipo diseñaran la interfaz de la página de inicio y la página de error 404 de un sitio web (el
+                    tema será seleccionado por el equipo).
+                    La interfaz debe contener al menos cinco iconos (por ejemplo: redes sociales, carrito de compra,
+                    contacto, botones, etc.) y estos deben ser animados con la herramienta SVGator vista en clase.
+                    A su vez, se debe desarrollar la página de error 404 y, como elemento central, debe tener un SVG
+                    animado. La animación puede ser desarrollada con SVGator.
+                    La entrega se debe realizar en formato ZIP y debe incluir toda la carpeta de desarrollo, es decir,
+                    los archivos HTML, CSS y SVG utilizados para la creación de la interfaz. Descripción de la actividad
+
+                    En equipo diseñaran la interfaz de la página de inicio y la página de error 404 de un sitio web (el
+                    tema será seleccionado por el equipo).
+                    La interfaz debe contener al menos cinco iconos (por ejemplo: redes sociales, carrito de compra,
+                    contacto, botones, etc.) y estos deben ser animados con la herramienta SVGator vista en clase.
+                    A su vez, se debe desarrollar la página de error 404 y, como elemento central, debe tener un SVG
+                    animado. La animación puede ser desarrollada con SVGator.
+                    La entrega se debe realizar en formato ZIP y debe incluir toda la carpeta de desarrollo, es decir,
+                    los archivos HTML, CSS y SVG utilizados para la creación de la interfaz.
                 </p>
             </div>
         </div>
-        
+
         <!-- Animacion 1 -->
-        <div id="animacion1"   class="cntAnima"><p>Animación 1</p></div>
-        
+        <div id="animacion1" class="cntAnima">
+            <div class="cntTxt">
+                <p>Animación 1</p>
+                <P>Representación de una estadística sistólica de medición arterial. <br><br> Se utilizan elementos como
+                    <code> text, rect, line, polyline,</code> los cuales se animan con las propiedades <span>stroke-dashoffset, filter </span>y la posición <span>y</span> para transicionar los pntos de lectura en la grafica de forma vertical
+                </P>
+            </div>
+            <div class="cntSvg">
+                <svg class="anim1" viewBox="-110 130 500 500" preserveAspectRatio="xMidYMid meet" style="width:100%; height:100%;" transform="scale(1.5)" >
+                    <!-- presion arterial -->
+
+                  
+                    <g transform="translate(-30), ">
+                        <!-- ejes sistolica-->
+
+                        <line x1="80" y1="320" x2="80" y2="420" stroke="#f1EFEC" stroke-width="2"
+                            stroke-dasharray="0 0" />
+                        <line x1="80" y1="320" x2="80" y2="400" stroke="#f1EFEC" stroke-width="15"
+                            stroke-dasharray="1 10" />
+                        <text x="45" y="335" font-family="Arial" font-size="10" fill="#E5E5E5">140</text>
+                        <text x="45" y="357" font-family="Arial" font-size="10" fill="#E5E5E5">130</text>
+                        <text x="45" y="379" font-family="Arial" font-size="10" fill="#E5E5E5">120</text>
+                        <text x="45" y="400" font-family="Arial" font-size="10" fill="#E5E5E5">110</text>
+                        <text x="-220" y="30" font-family="Arial" font-size="10" fill="darkblue" class="sistolica"
+                            transform="rotate(-90, 100, 100)">LECTURA SISTÓLICA</text>
+                        <text x="125" y="455" font-family="Arial" font-size="10" fill="darkblue"
+                            class="sistolica">MONITOREO CONTINUO</text>
+
+                        <line x1="70" y1="412.5" x2="280" y2="412.5" stroke="#f1EFEC" stroke-width="2"
+                            stroke-dasharray="0 0" />
+                        <line x1="79" y1="412.5" x2="280" y2="412.5" stroke="#f1EFEC" stroke-width="15"
+                            stroke-dasharray="2 15" />
+                        <text x="95" y="435" font-family="Arial" font-size="10" fill="#E5E5E5">1</text>
+                        <text x="112.5" y="435" font-family="Arial" font-size="10" fill="#E5E5E5">2</text>
+                        <text x="128" y="435" font-family="Arial" font-size="10" fill="#E5E5E5">3</text>
+                        <text x="145" y="435" font-family="Arial" font-size="10" fill="#E5E5E5">4</text>
+                        <text x="162" y="435" font-family="Arial" font-size="10" fill="#E5E5E5">5</text>
+                        <text x="180" y="435" font-family="Arial" font-size="10" fill="#E5E5E5">6</text>
+                        <text x="197" y="435" font-family="Arial" font-size="10" fill="#E5E5E5">7</text>
+                        <text x="213" y="435" font-family="Arial" font-size="10" fill="#E5E5E5">8</text>
+                        <text x="230" y="435" font-family="Arial" font-size="10" fill="#E5E5E5">9</text>
+                        <text x="244" y="435" font-family="Arial" font-size="10" fill="#E5E5E5">10</text>
+                        <text x="261" y="435" font-family="Arial" font-size="10" fill="#E5E5E5">11</text>
+
+                        <!-- lectura -->
+
+                        <rect class="sist1" x="95" y="357" width="2" height="15" fill="#0A4789" />
+                        <rect class="puntosPA1" x="95" y="363" width="4" height="4" rx="2" ry="2" fill="#0A4789" />
+
+
+                        <rect class="sist2" x="112" y="357" width="2" height="15" fill="#0A4789" />
+                        <rect class="puntosPA2" x="111" y="363" width="4" height="4" rx="2" ry="2" fill="#0A4789" />
+
+                        <rect class="sist3" x="130" y="377" width="2" height="15" fill="#0A4789" />
+                        <rect class="puntosPA3" x="129" y="383" width="4" height="4" rx="2" ry="2" fill="#0A4789" />
+
+                        <rect class="sist4" x="146" y="385" width="2" height="15" fill="#0A4789" />
+                        <rect class="puntosPA4" x="145" y="391" width="4" height="4" rx="2" ry="2" fill="#0A4789" />
+
+                        <rect class="sist5" x="164" y="353" width="2" height="15" fill="#0A4789" />
+                        <rect class="puntosPA5" x="163" y="359" width="4" height="4" rx="2" ry="2" fill="#0A4789" />
+
+                        <rect class="sist6" x="181" y="393" width="2" height="15" fill="#0A4789" />
+                        <rect class="puntosPA6" x="180" y="399" width="4" height="4" rx="2" ry="2" fill="#0A4789" />
+
+                        <rect class="sist7" x="198" y="343" width="2" height="15" fill="#0A4789" />
+                        <rect class="puntosPA7" x="197" y="349" width="4" height="4" rx="2" ry="2" fill="#0A4789" />
+
+                        <rect class="sist8" x="215" y="357" width="2" height="15" fill="#0A4789" />
+                        <rect class="puntosPA8" x="214" y="363" width="4" height="4" rx="2" ry="2" fill="#0A4789" />
+
+                        <rect class="sist9" x="232" y="373" width="2" height="15" fill="#0A4789" />
+                        <rect class="puntosPA9" x="231" y="379" width="4" height="4" rx="2" ry="2" fill="#0A4789" />
+
+                        <rect class="sist10" x="249" y="340" width="2" height="15" fill="#0A4789" />
+                        <rect class="puntosPA10" x="248" y="346" width="4" height="4" rx="2" ry="2" fill="#0A4789" />
+
+                        <rect class="sist11" x="266" y="373" width="2" height="15" fill="#0A4789" />
+                        <rect class="puntosPA11" x="265" y="379" width="4" height="4" rx="2" ry="2" fill="#0A4789" />
+
+                        <g>
+                            <polyline id="lineaSanMil" class="lineaDia" points="
+      096,364
+      113,364
+      131,384
+      147,392
+      165,360
+      182,400
+      199,350
+      216,364
+      233,380
+      250,347
+      267,380" fill="none" stroke="#acacac" stroke-width="1" stroke-dasharray="301" stroke-dashoffset="301" />
+                        </g>
+
+                    </g>
+                </svg>
+            </div>
+
+        </div>
+
         <!-- Animacion 2 -->
-        <div id="animacion2"   class="cntAnima"><p>Animación 2</p></div>
-        
+        <div id="animacion2" class="cntAnima">
+            <p>Animación 2</p>
+        </div>
+
         <!-- Animacion 3 -->
-        <div id="animacion3"   class="cntAnima"><p>Animación 3</p></div>
-        
+        <div id="animacion3" class="cntAnima">
+            <p>Animación 3</p>
+        </div>
+
         <!-- Animacion 4 -->
-        <div id="animacion4"   class="cntAnima"><p>Animación 4</p></div>
-        
+        <div id="animacion4" class="cntAnima">
+            <p>Animación 4</p>
+        </div>
+
         <!-- Animacion 5 -->
-        <div id="animacion5"   class="cntAnima"><p>Animación 5</p></div>
-        
+        <div id="animacion5" class="cntAnima">
+            <p>Animación 5</p>
+        </div>
+
         <!-- Animacion 404 Not Found -->
-        <div id="notfound"     class="cntAnima"><p>404 Not found</p></div>
+        <div id="notfound" class="cntAnima">
+            <p>404 Not found</p>
+        </div>
         <!-- Conclusiones de activdad -->
-        <div id="conclusiones"     class="cntAnima"><p>Conclusiones</p></div>
-        
+        <div id="conclusiones" class="cntAnima">
+            <p>Conclusiones</p>
+        </div>
+
     </div>
 
-    
+
 </body>
+
 </html>
