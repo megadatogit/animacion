@@ -112,7 +112,6 @@ hr {
     height: 100%;
     padding: 5rem;
 
-    &:not(#presentacion, #conclusiones)
 }
 
 #presentacion  {border-left: 35px solid color-mix(in srgb, white  100%, #00749A 0%);}
