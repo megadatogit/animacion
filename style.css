@@ -872,7 +872,7 @@ registradas en la gráfica */
 
     #presentacion>p {
         text-align: center;
-        margin: 0;
+        margin: 50;
     }
     .actividad p:nth-child(2) {
         padding: 30px 0;
