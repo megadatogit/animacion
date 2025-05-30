@@ -116,6 +116,11 @@ hr {
 
 #presentacion {
     border-left: 35px solid color-mix(in srgb, white 100%, #00749A 0%);
+    & .u {
+        text-align: center;
+        width: 50%;
+        margin-bottom: 3rem;
+    }
 }
 
 #animacion1 {
@@ -165,7 +170,7 @@ hr {
 #presentacion>ul {
     text-align: start;
     margin-right: 70px;
-
+    
     & li {
         margin-left: 90px;
         list-style: none;
@@ -782,6 +787,10 @@ registradas en la gráfica */
         width: 40px;
         cursor: pointer;
     }
+    
+    #menuCerrar {
+        z-index: 1;
+    }
 
     .cntMenu.active {
         transform: translateX(0);
@@ -799,8 +808,10 @@ registradas en la gráfica */
         background-color: #00749A;
 
         & nav {
+            margin-top:5rem ;
             & a {
                 color: white;
+                padding-right: 5rem;
 
                 &:hover {
                     color: #fff;
@@ -832,7 +843,7 @@ registradas en la gráfica */
         margin-left: 0%;
     }
 
-    #presentacion,
+    
     #animacion1,
     #animacion2,
     #animacion3,
@@ -846,6 +857,8 @@ registradas en la gráfica */
 
     #presentacion {
         text-align: center;
+        border-left: 0;
+        
     }
 
     #presentacion>ul {
@@ -859,15 +872,17 @@ registradas en la gráfica */
 
     #presentacion>p {
         text-align: center;
-        margin: 50px 0px 20px;
+        margin: 0;
     }
-
+    .actividad p:nth-child(2) {
+        padding: 30px 0;
+    }
     #animacion1 {
         flex-direction: column;
 
         & .cntTxt {
-            width: 80%;
-            padding: 0 0%;
+            width: 90%;
+            padding:0 0 0 0;
         }
 
         & .cntSvg {
