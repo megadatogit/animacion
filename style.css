@@ -118,7 +118,7 @@ hr {
     border-left: 35px solid color-mix(in srgb, white 100%, #00749A 0%);
     & .u {
         text-align: center;
-        width: 50%;
+        width: 150px;
         margin-bottom: 3rem;
     }
 }
