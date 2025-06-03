@@ -175,7 +175,42 @@
                 </svg>
             </div>
 
+            <div class="cntCode">
+                <p>Código CSS (fragmento)</p>
+                <code>
+     /* Trancisiona los puntos con delay de 0.1 segundos de forma infinita 
+    en un tiempo de 5 segundos */ <br><br>
+    .puntosPA1  {animation: puntosPAuno 5s ease 0.1s infinite;}<br>
+    .puntosPA2  {animation: puntosPAdos 5s ease 0.2s infinite;}<br>
+    .puntosPA3  {animation: puntosPAtres 5s ease 0.3s infinite;}<br>
+    .puntosPA4  {animation: puntosPAcuatro 5s ease 0.4s infinite;}<br>
+    .puntosPA5  {animation: puntosPAcinco 5s ease 0.5s infinite;}<br>
+    .puntosPA6  {animation: puntosPAseis 5s ease 0.6s infinite;}<br>
+    .puntosPA7  {animation: puntosPAsiete 5s ease 0.7s infinite;}<br>
+    .puntosPA8  {animation: puntosPAocho 5s ease 0.8s infinite;}<br>
+    .puntosPA9  {animation: puntosPAnueve 5s ease 0.9s infinite;}<br>
+    .puntosPA10 {animation: puntosPAdiez 5s ease 1.0s infinite;}<br>
+    .puntosPA11 {animation: puntosPAonce 5s ease 1.1s infinite;}<br><br>
+    
+    /* los valores de 'y' en los @Keyframes permiten el 
+    movimiento de los puntos en la gráfica de manera vertical */ <br><br>
+    @keyframes puntosPAuno { <br>
+          0% {y: 410;} <br>
+         20% {y: 363;} <br>
+         80% {y: 363;} <br>
+        100% {y: 410;} <br>
+    } <br> <br>
+    
+    @keyframes puntosPAdos { <br>
+          0% {y: 410;} <br>
+         20% {y: 363;} <br>
+         80% {y: 363;} <br>
+        100% {y: 410;} <br>
+    } <br>
+    ...            </code>
+            </div>
         </div>
+
 
         <!-- Animacion 2 -->
         <div id="animacion2" class="cntAnima">
@@ -291,6 +326,34 @@
                 </svg>
             </div>
 
+            <div class="cntCode">
+                <p>Código CSS (fragmento)</p>
+                <code>
+                    /* Trancisiona del aro mayor */ <br>
+     .aroExterno { <br>
+    transform: rotateY(0deg) translateX(0px);<br>
+    animation: aroExterno 2s  ease infinite alternate;<br>
+}<br>
+@keyframes aroExterno {to {transform: rotateY(45deg) translateX(-80px);}}<br><br>
+
+/* Primer grupo de aros seccionados (puntos y lineas) */<br>
+.nivel1 {<br>
+    fill: #00749A;<br>
+    transform: rotateY(0deg) translateX(0px);<br>
+    animation: nivel1 2s ease infinite alternate;<br><br>
+}
+@keyframes nivel1 {to {transform: rotateY(45deg) rotateX(0deg) translateX(-40px);}}<br><br>
+
+.center{<br>
+    transform-origin: 25% 25%;<br>
+    animation: center 2s ease <br>
+    infinite alternate;<br><br>
+}
+
+@keyframes center {to {transform: rotateX(-450deg) rotateY(450deg) rotateZ(150deg);}}<br>
+    ...            </code>
+            </div>
+
         </div>
 
         <!-- Animacion 3 -->
@@ -308,10 +371,6 @@
             <p>Animación 5</p>
         </div>
 
-        <!-- Animacion 404 Not Found -->
-        <div id="notfound" class="cntAnima">
-            <p>404 Not found</p>
-        </div>
         <!-- Conclusiones de activdad -->
         <div id="conclusiones" class="cntAnima">
             <p>Conclusiones</p>
