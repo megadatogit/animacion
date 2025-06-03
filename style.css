@@ -716,7 +716,7 @@ registradas en la gráfica */
     fill: url(#Degradado_sin_nombre_7);
 }
 
- /* Trancisiona del aro mayor */
+ /* Transiciona del aro mayor */
 .aroExterno {
     transform: rotateY(0deg) translateX(0px);
     animation: aroExterno 2s  ease infinite alternate;
@@ -880,7 +880,7 @@ registradas en la gráfica */
         padding: 30px 0;
     }
 
-    #animacion1 {
+    #animacion1, #animacion2 {
         flex-direction: column;
 
         & .cntTxt {
