@@ -15,6 +15,10 @@ body {
     position: relative;
 }
 
+:root{
+    font-size: 16px;
+}
+
 /* mantiene el menu visible en todo momento de la navegación */
 
 .cntMenu {
@@ -94,6 +98,10 @@ body {
     margin-left: 15%;
 }
 
+.cntAnima {
+    position: relative;
+}
+
 hr {
     width: 65%;
     margin: 0 auto;
@@ -106,19 +114,22 @@ hr {
 #animacion3,
 #animacion4,
 #animacion5,
-#conclusiones {
-    width: 100%;
-    height: 100%;
+#conclusiones {   
+    width: 2rem;
     padding: 5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
 
 }
 
 #presentacion {
     border-left: 35px solid color-mix(in srgb, white 100%, #00749A 0%);
 
-    & .u {
+    & .icon__unir--black {
         text-align: center;
-        width: 150px;
+        width: 16rem;;
         margin-bottom: 3rem;
     }
 }
@@ -133,6 +144,7 @@ hr {
 /* Presentación */
 #presentacion {
     text-align: end;
+    
 }
 
 #presentacion>h2 {
@@ -875,4 +887,16 @@ registradas en la gráfica */
         }
     }
 
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    & aside{
+
+    }
+    & section{
+
+    }
 }

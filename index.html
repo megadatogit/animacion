@@ -11,12 +11,14 @@
 </head>
 
 <body>
+    <main>
+        <aside class="">
     <!-- Contenedor para posicion fixed en menu -->
     <img id="menuAbrir" src="./menu.svg" alt="boton menu">
-    <div class="cntMenu">
-        <img id="menuCerrar" src="./cerrar.svg" alt="boton menu">
+    <div class="sidebar cntMenu">
+        <img class="icon__close--white" id="menuCerrar" src="./images/icon__close--white.svg" alt="boton menu">
 
-        <div class="cntImg"><img src="./Unir.png" alt="unir"></div>
+        <div class="cntImg"><img src="./images/icon__unir--black.svg" alt="unir"></div>
         <nav>
             <a href="#presentacion">Actividada 2</a>
             <a href="#animacion1">Animación 1</a>
@@ -28,14 +30,14 @@
             <a href="#conclusiones">Conclusiones</a>
             </nav>
         </div>
-
-    <!-- Contenedores -->
-
+        </aside>
+        <section>
     <div class="cntAnimaciones">
 
         <!-- Caratula -->
-        <div id="presentacion" class="cntAnima">
-            <img class="u" src="./UdeUnir.png" alt="">
+        <div  class="cntAnima">
+            <div id="presentacion"></div>
+            <img class="icon__unir--black" src="./images/icon__unir--black-blue.svg" alt="">
             <h2>Maestria. Diseño de Interfaces Web / 1er. Semestre / Actividad grupal</h2>
             <h2>Desarrollo de Recursos Animados para Web</h2>
             <h2>Mtro. Nestor Alejandro Arredondo Díaz</h2>
@@ -73,7 +75,8 @@
         </div>
 
         <!-- Animacion 1 -->
-        <div id="animacion1" class="cntAnima">
+        <div class="cntAnima">
+             <div id="animacion1"></div>
             <div class="cntTxt">
                 <p>Animación 1</p>
                 <P>Representación de una estadística sistólica de medición arterial. <br><br> Se utilizan elementos como
@@ -213,7 +216,8 @@
 
 
         <!-- Animacion 2 -->
-        <div id="animacion2" class="cntAnima">
+        <div  class="cntAnima">
+            <div id="animacion2"></div>
             <div class="cntTxt">
                 <p>Animación 2</p>
                 <P>Transición de figuras circulares con rotate <br><br> Se utilizan elementos como
@@ -357,7 +361,8 @@
         </div>
 
         <!-- Animacion 3 -->
-        <div id="animacion3" class="cntAnima">
+        <div  class="cntAnima">
+            <div id="animacion3"></div>
             <div class="cntTxt">
                 <p>Animación 3</p>
 
@@ -386,7 +391,8 @@
         
 
         <!-- Animacion 4 -->
-        <div id="animacion4" class="cntAnima">
+        <div  class="cntAnima">
+            <div id="animacion4"></div>
             <div class="cntTxt">
                 <p>Animación 4</p>
 
@@ -413,7 +419,8 @@
         </div>
 
         <!-- Animacion 5 -->
-        <div id="animacion5" class="cntAnima">
+        <div  class="cntAnima">
+            <div id="animacion5"></div>
             <div class="cntTxt">
                 <p>Animación 5</p>
 
@@ -445,6 +452,13 @@
         </div>
 
     </div>
+        </section>
+    </main>
+
+
+    <!-- Contenedores -->
+
+
 
     <script src="./main.js"></script>
 </body>
