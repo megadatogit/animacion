@@ -175,10 +175,7 @@ hr {
     color: #00749A;
 }
 
-/* 
-Animación 1 
-Lectura Sistóllica
-*/
+/* estilos de contenedores */
 
 #animacion1,
 #animacion2,
@@ -226,6 +223,12 @@ Lectura Sistóllica
     }
 }
 
+/* 
+Animación 1 
+Lectura Sistóllica
+*/
+
+
 /* Trancisiona los puntos con delay de 0.1 segundos de forma infinita 
 en un tiempo de 5 segundos */
 .puntosPA1  {animation: puntosPAuno 5s ease 0.1s infinite;}
@@ -257,39 +260,17 @@ movimiento de los puntos en la gráfica de manera vertica */
 }
 
 @keyframes puntosPAtres {
-    0% {
-        y: 410;
-    }
-
-    20% {
-        y: 383;
-    }
-
-    80% {
-        y: 383;
-    }
-
-    100% {
-        y: 410;
-    }
+    0%   {y: 410;}
+    20%  {y: 383;}
+    80%  {y: 383;}
+    100% {y: 410;}
 }
 
 @keyframes puntosPAcuatro {
-    0% {
-        y: 410;
-    }
-
-    20% {
-        y: 391;
-    }
-
-    80% {
-        y: 391;
-    }
-
-    100% {
-        y: 410;
-    }
+    0%   {y: 410;}
+    20%  {y: 391;}
+    80%  {y: 391;}
+    100% {y: 410;}
 }
 
 @keyframes puntosPAcinco {
