@@ -88,6 +88,7 @@ body {
     }
 }
 
+
 .cntAnimaciones {
     width: 100%;
     height: 100%;
@@ -110,12 +111,12 @@ hr {
     width: 100%;
     height: 100%;
     padding: 5rem;
-
+    
 }
 
 #presentacion {
     border-left: 35px solid color-mix(in srgb, white 100%, #00749A 0%);
-
+    
     & .u {
         text-align: center;
         width: 150px;
