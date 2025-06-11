@@ -29,12 +29,19 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    
 
     & nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.25rem;
+        height: 100%;
+        margin-top: 100px;
+        padding-top: 50px;
 
         & p {
             font-size: 1.2rem;
@@ -63,6 +70,10 @@ body {
     }
 }
 
+::-webkit-scrollbar-button {
+    display: none; /* Hide the up and down arrows/buttons */
+    }
+
 /* transición visual (línea inferior) de la seleción en menu */
 
 & a::before {
@@ -79,11 +90,12 @@ body {
 
 .cntImg {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    text-align: center;
+    top: 0;
+    width: 100%;
 
     & img {
-        width: 75%;
+        width: 50%;
         text-align: center;
     }
 }
@@ -106,6 +118,7 @@ hr {
 #animacion3,
 #animacion4,
 #animacion5,
+#notfound,
 #conclusiones {
     width: 100%;
     height: 100%;
@@ -116,9 +129,9 @@ hr {
 #presentacion {
     border-left: 35px solid color-mix(in srgb, white 100%, #00749A 0%);
 
-    & .u {
+    & .unir {
         text-align: center;
-        width: 150px;
+        width: 300px;
         margin-bottom: 3rem;
     }
 }
@@ -181,7 +194,8 @@ hr {
 #animacion2,
 #animacion3,
 #animacion4,
-#animacion5 {
+#animacion5,
+#notfound {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -274,429 +288,167 @@ movimiento de los puntos en la gráfica de manera vertica */
 }
 
 @keyframes puntosPAcinco {
-    0% {
-        y: 410;
-    }
-
-    20% {
-        y: 359;
-    }
-
-    80% {
-        y: 359;
-    }
-
-    100% {
-        y: 410;
-    }
+    0%   {y: 410;}
+    20%  {y: 359;}
+    80%  {y: 359;}
+    100% {y: 410;}
 }
 
 @keyframes puntosPAseis {
-    0% {
-        y: 410;
-    }
-
-    20% {
-        y: 399;
-    }
-
-    80% {
-        y: 399;
-    }
-
-    100% {
-        y: 410;
-    }
+    0%   {y: 410;}
+    20%  {y: 399;}
+    80%  {y: 399;}
+    100% {y: 410;}
 }
 
 @keyframes puntosPAsiete {
-    0% {
-        y: 410;
-    }
-
-    20% {
-        y: 349;
-    }
-
-    80% {
-        y: 349;
-    }
-
-    100% {
-        y: 410;
-    }
+    0%   {y: 410;}
+    20%  {y: 349;}
+    80%  {y: 349;}
+    100% {y: 410;}
 }
 
 @keyframes puntosPAocho {
-    0% {
-        y: 410;
-    }
-
-    20% {
-        y: 363;
-    }
-
-    80% {
-        y: 363;
-    }
-
-    100% {
-        y: 410;
-    }
+    0%   {y: 410;}
+    20%  {y: 363;}
+    80%  {y: 363;}
+    100% {y: 410;}
 }
 
 @keyframes puntosPAnueve {
-    0% {
-        y: 410;
-    }
-
-    20% {
-        y: 379;
-    }
-
-    80% {
-        y: 379;
-    }
-
-    100% {
-        y: 410;
-    }
+    0%   {y: 410;}
+    20%  {y: 379;}
+    80%  {y: 379;}
+    100% {y: 410;}
 }
 
 @keyframes puntosPAdiez {
-    0% {
-        y: 410;
-    }
-
-    20% {
-        y: 346;
-    }
-
-    80% {
-        y: 346;
-    }
-
-    100% {
-        y: 410;
-    }
+    0%   {y: 410;}
+    20%  {y: 346;}
+    80%  {y: 346;}
+    100% {y: 410;}
 }
 
 @keyframes puntosPAonce {
-    0% {
-        y: 410;
-    }
-
-    20% {
-        y: 379;
-    }
-
-    80% {
-        y: 379;
-    }
-
-    100% {
-        y: 410;
-    }
+    0%   {y: 410;}
+    20%  {y: 379;}
+    80%  {y: 379;}
+    100% {y: 410;}
 }
 
 /* trancision de la trayectoria de polyline  */
-.lineaDia {
-    animation: trazoDia 5s ease infinite;
-}
-
+.lineaDia {animation: trazoDia 5s ease infinite;}
 
 /* stroke-dashoffset, realiza la extension de separacin de trazo 
 para simular el recorrido de lectura en gráfica */
 @keyframes trazoDia {
-    0% {
-        stroke-dashoffset: 300;
-    }
-
-    20% {
-        stroke-dashoffset: 300;
-    }
-
-    80% {
-        stroke-dashoffset: 00;
-    }
-
-    100% {
-        stroke-dashoffset: 300;
-    }
+    0%   {stroke-dashoffset: 300;}
+    20%  {stroke-dashoffset: 300;}
+    80%  {stroke-dashoffset:   0;}
+    100% {stroke-dashoffset: 300;}
 }
 
 /* lineas en los puntos de lectura que interpretan las tolerancias
 registradas en la gráfica */
-.sist1 {
-    animation: lineaSisuno 5s ease 0.1s infinite;
-}
-
-.sist2 {
-    animation: lineaSisdos 5s ease 0.2s infinite;
-}
-
-.sist3 {
-    animation: lineaSistres 5s ease 0.3s infinite;
-}
-
-.sist4 {
-    animation: lineaSiscuatro 5s ease 0.4s infinite;
-}
-
-.sist5 {
-    animation: lineaSiscinco 5s ease 0.5s infinite;
-}
-
-.sist6 {
-    animation: lineaSisseis 5s ease 0.6s infinite;
-}
-
-.sist7 {
-    animation: lineaSissiete 5s ease 0.7s infinite;
-}
-
-.sist8 {
-    animation: lineaSisocho 5s ease 0.8s infinite;
-}
-
-.sist9 {
-    animation: lineaSisnueve 5s ease 0.9s infinite;
-}
-
-.sist10 {
-    animation: lineaSisdiez 5s ease 1.0s infinite;
-}
-
-.sist11 {
-    animation: lineaSisonce 5s ease 1.1s infinite;
-}
+.sist1  {animation: lineaSisuno 5s    ease 0.1s infinite;}
+.sist2  {animation: lineaSisdos 5s    ease 0.2s infinite;}
+.sist3  {animation: lineaSistres 5s   ease 0.3s infinite;}
+.sist4  {animation: lineaSiscuatro 5s ease 0.4s infinite;}
+.sist5  {animation: lineaSiscinco 5s  ease 0.5s infinite;}
+.sist6  {animation: lineaSisseis 5s   ease 0.6s infinite;}
+.sist7  {animation: lineaSissiete 5s  ease 0.7s infinite;}
+.sist8  {animation: lineaSisocho 5s   ease 0.8s infinite;}
+.sist9  {animation: lineaSisnueve 5s  ease 0.9s infinite;}
+.sist10 {animation: lineaSisdiez 5s   ease 1.0s infinite;}
+.sist11 {animation: lineaSisonce 5s   ease 1.1s infinite;}
 
 /* transicion de opacidad en el recorrido del trazo */
 @keyframes lineaSisuno {
-    0% {
-        filter: opacity(0);
-    }
-
-    20% {
-        filter: opacity(0);
-    }
-
-    80% {
-        filter: opacity(1);
-    }
-
-    100% {
-        filter: opacity(0);
-    }
+    0%   {filter: opacity(0);}
+    20%  {filter: opacity(0);}
+    80%  {filter: opacity(1);}
+    100% {filter: opacity(0);}
 }
 
 @keyframes lineaSisdos {
-    0% {
-        filter: opacity(0);
-    }
-
-    20% {
-        filter: opacity(0);
-    }
-
-    80% {
-        filter: opacity(1);
-    }
-
-    100% {
-        filter: opacity(0);
-    }
+    0%   {filter: opacity(0);}
+    20%  {filter: opacity(0);}
+    80%  {filter: opacity(1);}
+    100% {filter: opacity(0);}
 }
 
 @keyframes lineaSistres {
-    0% {
-        filter: opacity(0);
-    }
-
-    20% {
-        filter: opacity(0);
-    }
-
-    80% {
-        filter: opacity(1);
-    }
-
-    100% {
-        filter: opacity(0);
-    }
+    0%   {filter: opacity(0);}
+    20%  {filter: opacity(0);}
+    80%  {filter: opacity(1);}
+    100% {filter: opacity(0);}
 }
 
 @keyframes lineaSiscuatro {
-    0% {
-        filter: opacity(0);
-    }
-
-    20% {
-        filter: opacity(0);
-    }
-
-    80% {
-        filter: opacity(1);
-    }
-
-    100% {
-        filter: opacity(0);
-    }
+    0%   {filter: opacity(0);}
+    20%  {filter: opacity(0);}
+    80%  {filter: opacity(1);}
+    100% {filter: opacity(0);}
 }
 
 @keyframes lineaSiscinco {
-    0% {
-        filter: opacity(0);
-    }
-
-    20% {
-        filter: opacity(0);
-    }
-
-    80% {
-        filter: opacity(1);
-    }
-
-    100% {
-        filter: opacity(0);
-    }
+    0%   {filter: opacity(0);}
+    20%  {filter: opacity(0);}
+    80%  {filter: opacity(1);}
+    100% {filter: opacity(0);}
 }
 
 @keyframes lineaSisseis {
-    0% {
-        filter: opacity(0);
-    }
-
-    20% {
-        filter: opacity(0);
-    }
-
-    80% {
-        filter: opacity(1);
-    }
-
-    100% {
-        filter: opacity(0);
-    }
+    0%   {filter: opacity(0);}
+    20%  {filter: opacity(0);}
+    80%  {filter: opacity(1);}
+    100% {filter: opacity(0);}
 }
 
 @keyframes lineaSissiete {
-    0% {
-        filter: opacity(0);
-    }
-
-    20% {
-        filter: opacity(0);
-    }
-
-    80% {
-        filter: opacity(1);
-    }
-
-    100% {
-        filter: opacity(0);
-    }
+    0%   {filter: opacity(0);}
+    20%  {filter: opacity(0);}
+    80%  {filter: opacity(1);}
+    100% {filter: opacity(0);}
 }
 
 @keyframes lineaSisocho {
-    0% {
-        filter: opacity(0);
-    }
-
-    20% {
-        filter: opacity(0);
-    }
-
-    80% {
-        filter: opacity(1);
-    }
-
-    100% {
-        filter: opacity(0);
-    }
+    0%   {filter: opacity(0);}
+    20%  {filter: opacity(0);}
+    80%  {filter: opacity(1);}
+    100% {filter: opacity(0);}
 }
 
 @keyframes lineaSisnueve {
-    0% {
-        filter: opacity(0);
-    }
-
-    20% {
-        filter: opacity(0);
-    }
-
-    80% {
-        filter: opacity(1);
-    }
-
-    100% {
-        filter: opacity(0);
-    }
+    0%   {filter: opacity(0);}
+    20%  {filter: opacity(0);}
+    80%  {filter: opacity(1);}
+    100% {filter: opacity(0);}
 }
 
 @keyframes lineaSisdiez {
-    0% {
-        filter: opacity(0);
-    }
-
-    20% {
-        filter: opacity(0);
-    }
-
-    80% {
-        filter: opacity(1);
-    }
-
-    100% {
-        filter: opacity(0);
-    }
+    0%   {filter: opacity(0);}
+    20%  {filter: opacity(0);}
+    80%  {filter: opacity(1);}
+    100% {filter: opacity(0);}
 }
 
 @keyframes lineaSisonce {
-    0% {
-        filter: opacity(0);
-    }
-
-    20% {
-        filter: opacity(0);
-    }
-
-    80% {
-        filter: opacity(1);
-    }
-
-    100% {
-        filter: opacity(0);
-    }
+    0%   {filter: opacity(0);}
+    20%  {filter: opacity(0);}
+    80%  {filter: opacity(1);}
+    100% {filter: opacity(0);}
 }
 
 
 /* Animación 2 */
 
-.cls-1 {
-    fill: url(#Degradado_sin_nombre_7-3);
-}
-
-.cls-2 {
-    fill: url(#Degradado_sin_nombre_7-2);
-}
-
-.cls-3 {
-    fill: #0adffa;
-}
-
-.cls-4 {
-    fill: url(#Degradado_sin_nombre_7-4);
-}
-
-.cls-5 {
-    fill: url(#Degradado_sin_nombre_7-5);
-}
-
-.cls-6 {
-    fill: url(#Degradado_sin_nombre_7);
-}
-
+.cls-1 {fill: url(#Degradado_sin_nombre_7-3);}
+.cls-2 {fill: url(#Degradado_sin_nombre_7-2);}
+.cls-3 {fill: #0adffa;}
+.cls-4 {fill: url(#Degradado_sin_nombre_7-4);}
+.cls-5 {fill: url(#Degradado_sin_nombre_7-5);}
+.cls-6 {fill: url(#Degradado_sin_nombre_7);}
  /* Trancisiona del aro mayor */
 .aroExterno {
     transform: rotateY(0deg) translateX(0px);
@@ -725,18 +477,14 @@ registradas en la gráfica */
     animation: nivel3 2s  ease infinite alternate;
 }
 
-@keyframes nivel3 {
-    to {transform: rotateY(45deg) translateX(20px);}
-}
+@keyframes nivel3 {to {transform: rotateY(45deg) translateX(20px);}}
 
 .nivel4 {
     transform: rotateY(0deg) translateX(0px);
     animation: nivel4 2s  ease infinite alternate;
 }
 
-@keyframes nivel4 {
-    to {transform: rotateY(45deg) translateX(100px);}
-}
+@keyframes nivel4 {to {transform: rotateY(45deg) translateX(100px);}}
 
 
 
@@ -785,7 +533,7 @@ registradas en la gráfica */
         align-items: end;
         right: 0;
         transform: translateX(100%);
-        transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+        transition: transform ease-in-out 0.6s;
         background-color: #00749A;
 
         & nav {
@@ -811,13 +559,16 @@ registradas en la gráfica */
         bottom: 15%;
         transition: width 0.3s ease;
     }
-
+    
     .cntImg {
-        width: 30%;
-
+        
+        width: 100%;
+        text-align: start;
+        padding-left: 5%;
         & img {
-            width: 100%;
+            width: 15%;
             filter: brightness(100);
+            text-align: start;
         }
     }
 
