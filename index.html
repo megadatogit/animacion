@@ -11,12 +11,14 @@
 </head>
 
 <body>
+    <main>
+        <aside class="">
     <!-- Contenedor para posicion fixed en menu -->
     <img id="menuAbrir" src="./menu.svg" alt="boton menu">
-    <div class="cntMenu">
-        <img id="menuCerrar" src="./cerrar.svg" alt="boton menu">
+    <div class="sidebar cntMenu">
+        <img class="icon__close--white" id="menuCerrar" src="./images/icon__close--white.svg" alt="boton menu">
 
-        <div class="cntImg"><img src="./Unir.png" alt="unir"></div>
+        <div class="cntImg"><img src="./images/icon__unir--black.svg" alt="unir"></div>
         <nav>
             <a href="#presentacion">Actividada 2</a>
             <a href="#animacion1">Animación 1</a>
@@ -28,14 +30,14 @@
             <a href="#conclusiones">Conclusiones</a>
             </nav>
         </div>
-
-    <!-- Contenedores -->
-
+        </aside>
+        <section>
     <div class="cntAnimaciones">
 
         <!-- Caratula -->
-        <div id="presentacion" class="cntAnima">
-            <img class="u" src="./UdeUnir.png" alt="">
+        <div  class="cntAnima">
+            <div id="presentacion"></div>
+            <img class="icon__unir--black" src="./images/icon__unir--black-blue.svg" alt="">
             <h2>Maestria. Diseño de Interfaces Web / 1er. Semestre / Actividad grupal</h2>
             <h2>Desarrollo de Recursos Animados para Web</h2>
             <h2>Mtro. Nestor Alejandro Arredondo Díaz</h2>
@@ -73,7 +75,8 @@
         </div>
 
         <!-- Animacion 1 -->
-        <div id="animacion1" class="cntAnima">
+        <div class="cntAnima">
+             <div id="animacion1"></div>
             <div class="cntTxt">
                 <p>Animación 1</p>
                 <P>Representación de una estadística sistólica de medición arterial. <br><br> Se utilizan elementos como
@@ -178,7 +181,7 @@
             <div class="cntCode">
                 <p>Código CSS (fragmento)</p>
                 <code>
-     /* Trancisiona los puntos con delay de 0.1 segundos de forma infinita 
+     /* Transiciona los puntos con delay de 0.1 segundos de forma infinita 
     en un tiempo de 5 segundos */ <br><br>
     .puntosPA1  {animation: puntosPAuno 5s ease 0.1s infinite;}<br>
     .puntosPA2  {animation: puntosPAdos 5s ease 0.2s infinite;}<br>
@@ -213,7 +216,8 @@
 
 
         <!-- Animacion 2 -->
-        <div id="animacion2" class="cntAnima">
+        <div  class="cntAnima">
+            <div id="animacion2"></div>
             <div class="cntTxt">
                 <p>Animación 2</p>
                 <P>Transición de figuras circulares con rotate <br><br> Se utilizan elementos como
@@ -222,108 +226,7 @@
                 </P>
             </div>
             <div class="cntSvg">
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg transform="scale(1)" id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-64 -64 256.32 256.32">
-                    <defs>
-                        
-                        <linearGradient id="Degradado_sin_nombre_7" data-name="Degradado sin nombre 7" x1="26.17"
-                            y1="120.18" x2="97.17" y2="15.12" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#00749A" />
-                            <stop offset="1" stop-color="#00749A" />
-                        </linearGradient>
-                        <linearGradient id="Degradado_sin_nombre_7-2" data-name="Degradado sin nombre 7" x1="23.26"
-                            y1="118.21" x2="94.25" y2="13.15" xlink:href="#Degradado_sin_nombre_7" />
-                        <linearGradient id="Degradado_sin_nombre_7-3" data-name="Degradado sin nombre 7" x1="51.56"
-                            y1="137.33" x2="122.55" y2="32.28" xlink:href="#Degradado_sin_nombre_7" />
-                        <linearGradient id="Degradado_sin_nombre_7-4" data-name="Degradado sin nombre 7" x1="30.78"
-                            y1="123.29" x2="101.77" y2="18.23" xlink:href="#Degradado_sin_nombre_7" />
-                        <linearGradient id="Degradado_sin_nombre_7-5" data-name="Degradado sin nombre 7" x1="-1.52"
-                            y1="101.46" x2="69.48" y2="-3.59" xlink:href="#Degradado_sin_nombre_7" />
-                    </defs>
-                    <g id="Capa_1-2" data-name="Capa 1">
-                        <g>
-                            <g>
-                                <path class="cls-6 aroExterno"
-                                    d="M64.08,128.16C28.75,128.16,0,99.41,0,64.08S28.75,0,64.08,0s64.08,28.75,64.08,64.08-28.75,64.08-64.08,64.08Zm0-126.18C29.84,1.98,1.98,29.84,1.98,64.08s27.86,62.1,62.1,62.1,62.1-27.86,62.1-62.1S98.32,1.98,64.08,1.98Z" />
-                                <path class="cls-3 nivel1 nivel1"
-                                    d="M59.22,112.24c-22.77-2.27-40.98-20.45-43.29-43.21l1.49-.15c2.24,22.06,19.88,39.68,41.95,41.88l-.15,1.49Z" />
-                                <path class="cls-3 nivel1 nivel1"
-                                    d="M110.49,57.19c-3.26-22.15-21.88-38.96-44.27-39.97l.07-1.49c23.1,1.04,42.31,18.38,45.68,41.24l-1.48,.22Z" />
-                                <path class="cls-3 nivel1 nivel4"
-                                    d="M64.08,92.15c-15.48,0-28.07-12.59-28.07-28.07s12.59-28.07,28.07-28.07,28.07,12.59,28.07,28.07-12.59,28.07-28.07,28.07Zm0-51.19c-12.75,0-23.12,10.37-23.12,23.12s10.37,23.12,23.12,23.12,23.12-10.37,23.12-23.12-10.37-23.12-23.12-23.12Z" />
-                                    <g class="center">
-                                <path class="cls-2 nivel3"
-                                    d="M52.8,105.42l-1.42-.44c-10.62-3.29-19.43-10.48-24.82-20.25l-.72-1.3,11.26-6.21,.72,1.3c3.77,6.84,9.94,11.87,17.37,14.18l1.42,.44-3.81,12.28Zm-22.9-20.83c4.81,8.01,12.16,14.01,20.95,17.1l2.05-6.62c-7.07-2.54-13.01-7.39-16.94-13.83l-6.07,3.35Z" />
-                                <path class="cls-1 nivel3"
-                                    d="M67.6,106.78l-1.49-12.77,1.47-.17c15.08-1.76,26.46-14.55,26.46-29.76,0-1.37-.09-2.74-.28-4.08l-.2-1.47,12.74-1.73,.2,1.47c.26,1.92,.39,3.87,.39,5.81,0,21.74-16.26,40.02-37.82,42.53l-1.47,.17Zm1.8-10.2l.8,6.88c19.33-2.98,33.73-19.65,33.73-39.39,0-1.31-.07-2.63-.19-3.94l-6.87,.93c.09,1,.14,2,.14,3,0,16.22-11.77,29.94-27.61,32.51Z" />
-                                <path class="cls-4 nivel3"
-                                    d="M92.08,53.26l-.6-1.35c-3.41-7.65-9.9-13.56-17.81-16.23l-1.41-.47,4.11-12.18,1.41,.47c11.31,3.81,20.59,12.26,25.45,23.18l.6,1.36-11.74,5.23Zm-16.07-19.89c7.6,2.96,13.89,8.68,17.54,15.99l6.33-2.82c-4.45-9.07-12.23-16.15-21.66-19.73l-2.21,6.56Z" />
-                                <path class="cls-5 nivel3"
-                                    d="M34.11,65.56h-12.85v-1.48c0-17.25,10.26-32.74,26.15-39.45l1.37-.58,5.01,11.84-1.37,.58c-11.12,4.7-18.3,15.54-18.3,27.62v1.48Zm-9.86-2.97h6.93c.54-12.17,7.73-23.01,18.73-28.26l-2.7-6.38c-13.57,6.34-22.41,19.68-22.96,34.64Z" />
-                                    </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <rect class="cls-3 nivel1 nivel1" x="43.19" y="9.2" width="2.99" height="11.8"
-                                        transform="translate(-2.42 17.51) rotate(-21.6)" />
-                                    <rect class="cls-3 nivel1 nivel1" x="37.21" y="12.02" width="2.99" height="11.8"
-                                        transform="translate(-3.84 20.86) rotate(-28.8)" />
-                                    <rect class="cls-3 nivel1 nivel1" x="31.62" y="15.56" width="2.99" height="11.8"
-                                        transform="translate(-6.29 23.56) rotate(-36)" />
-                                    <rect class="cls-3 nivel1 nivel1" x="26.52" y="19.78" width="2.99" height="11.8"
-                                        transform="translate(-9.98 26.14) rotate(-43.2)" />
-                                    <rect class="cls-3 nivel1" x="22" y="24.6" width="2.99" height="11.8"
-                                        transform="translate(-14.98 29.16) rotate(-50.4)" />
-                                    <rect class="cls-3 nivel1" x="18.11" y="29.95" width="2.99" height="11.8"
-                                        transform="translate(-21.17 33.19) rotate(-57.6)" />
-                                    <rect class="cls-3 nivel1" x="14.92" y="35.75" width="2.99" height="11.8"
-                                        transform="translate(-28.26 38.77) rotate(-64.8)" />
-                                    <rect class="cls-3 nivel1" x="81.98" y="107.16" width="2.99" height="11.8"
-                                        transform="translate(202.7 187.45) rotate(158.4)" />
-                                    <rect class="cls-3 nivel1" x="87.96" y="104.34" width="2.99" height="11.8"
-                                        transform="translate(220.96 163.75) rotate(151.2)" />
-                                    <rect class="cls-3 nivel1" x="93.55" y="100.8" width="2.99" height="11.8"
-                                        transform="translate(234.65 137.15) rotate(144)" />
-                                    <rect class="cls-3 nivel1" x="98.65" y="96.58" width="2.99" height="11.8"
-                                        transform="translate(243.29 108.64) rotate(136.8)" />
-                                    <rect class="cls-3 nivel1" x="103.17" y="91.76" width="2.99" height="11.8"
-                                        transform="translate(246.63 79.26) rotate(129.6)" />
-                                    <rect class="cls-3 nivel1" x="107.06" y="86.41" width="2.99" height="11.8"
-                                        transform="translate(244.66 50.11) rotate(122.4)" />
-                                    <rect class="cls-3 nivel1" x="110.25" y="80.61" width="2.99" height="11.8"
-                                        transform="translate(237.6 22.24) rotate(115.2)" />
-                                </g>
-                                <g>
-                                    <path class="cls-3 nivel1"
-                                        d="M67.31,8.09c0,1.78-1.45,3.23-3.23,3.23s-3.23-1.45-3.23-3.23,1.45-3.23,3.23-3.23,3.23,1.45,3.23,3.23Z" />
-                                    <path class="cls-3 nivel1"
-                                        d="M8.88,60.05c1.78,0,3.23,1.45,3.23,3.23s-1.45,3.23-3.23,3.23-3.23-1.45-3.23-3.23,1.45-3.23,3.23-3.23Z" />
-                                    <path class="cls-3 nivel1"
-                                        d="M9.93,74.44c1.72-.46,3.49,.56,3.96,2.28,.46,1.72-.56,3.49-2.28,3.96-1.72,.46-3.49-.56-3.96-2.28-.46-1.72,.56-3.49,2.28-3.96Z" />
-                                    <path class="cls-3 nivel1"
-                                        d="M14.66,88.08c1.54-.89,3.52-.36,4.41,1.18,.89,1.54,.36,3.52-1.18,4.41-1.54,.89-3.52,.36-4.41-1.18s-.36-3.52,1.18-4.41Z" />
-                                    <path class="cls-3 nivel1"
-                                        d="M22.77,100.02c1.26-1.26,3.31-1.26,4.57,0,1.26,1.26,1.26,3.31,0,4.57-1.26,1.26-3.31,1.26-4.57,0-1.26-1.26-1.26-3.31,0-4.57Z" />
-                                    <path class="cls-3 nivel1"
-                                        d="M33.68,109.46c.89-1.54,2.87-2.07,4.41-1.18,1.54,.89,2.07,2.87,1.18,4.41-.89,1.54-2.87,2.07-4.41,1.18-1.54-.89-2.07-2.87-1.18-4.41Z" />
-                                    <path class="cls-3 nivel1"
-                                        d="M46.67,115.75c.46-1.72,2.23-2.75,3.96-2.28,1.72,.46,2.75,2.23,2.28,3.96-.46,1.72-2.23,2.75-3.96,2.28-1.72-.46-2.75-2.23-2.28-3.96Z" />
-                                    <path class="cls-3 nivel1"
-                                        d="M118.22,52.11c-1.72,.46-3.49-.56-3.96-2.28-.46-1.72,.56-3.49,2.28-3.96,1.72-.46,3.49,.56,3.96,2.28,.46,1.72-.56,3.49-2.28,3.96Z" />
-                                    <path class="cls-3 nivel1"
-                                        d="M113.49,38.48c-1.54,.89-3.52,.36-4.41-1.18-.89-1.54-.36-3.52,1.18-4.41,1.54-.89,3.52-.36,4.41,1.18,.89,1.54,.36,3.52-1.18,4.41Z" />
-                                    <path class="cls-3 nivel1"
-                                        d="M105.39,26.54c-1.26,1.26-3.31,1.26-4.57,0s-1.26-3.31,0-4.57c1.26-1.26,3.31-1.26,4.57,0,1.26,1.26,1.26,3.31,0,4.57Z" />
-                                    <path class="cls-3 nivel1"
-                                        d="M94.47,17.1c-.89,1.54-2.87,2.07-4.41,1.18-1.54-.89-2.07-2.87-1.18-4.41,.89-1.54,2.87-2.07,4.41-1.18,1.54,.89,2.07,2.87,1.18,4.41Z" />
-                                    <path class="cls-3 nivel1"
-                                        d="M81.48,10.8c-.46,1.72-2.23,2.75-3.96,2.28-1.72-.46-2.75-2.23-2.28-3.96,.46-1.72,2.23-2.75,3.96-2.28,1.72,.46,2.75,2.23,2.28,3.96Z" />
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
+               
             </div>
 
             <div class="cntCode">
@@ -357,7 +260,8 @@
         </div>
 
         <!-- Animacion 3 -->
-        <div id="animacion3" class="cntAnima">
+        <div  class="cntAnima">
+            <div id="animacion3"></div>
             <div class="cntTxt">
                 <p>Animación 3</p>
 
@@ -386,7 +290,8 @@
         
 
         <!-- Animacion 4 -->
-        <div id="animacion4" class="cntAnima">
+        <div  class="cntAnima">
+            <div id="animacion4"></div>
             <div class="cntTxt">
                 <p>Animación 4</p>
 
@@ -413,7 +318,8 @@
         </div>
 
         <!-- Animacion 5 -->
-        <div id="animacion5" class="cntAnima">
+        <div  class="cntAnima">
+            <div id="animacion5"></div>
             <div class="cntTxt">
                 <p>Animación 5</p>
 
@@ -445,6 +351,13 @@
         </div>
 
     </div>
+        </section>
+    </main>
+
+
+    <!-- Contenedores -->
+
+
 
     <script src="./main.js"></script>
 </body>
