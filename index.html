@@ -358,24 +358,40 @@
         <!-- Animacion 3 -->
         <div id="animacion3" class="cntAnima">
             <div class="cntTxt">
-                <p>Animación 3</p>
+                <p>Animación 3- Tik-tok</p>
 
                 <!-- descripcion de animación // utiliza <code> y <span> para resaltar texto -->
-                <P>tu descripcion <br><br> 
-                    <code> etiquetas resaltadas</code> 
-                    <span>propiedades resaltadas</span>
+                <P>Logo aniamdo de la aplicación de Tik-tok <br><br> Animación en bucleque que donde se transforma y se mueve el logo de la aplicación. Se utilizan propiedades como
+         
+                    <span>position, stroke offset y scale</span> permitiendo generar la animación.
                 </P>
             </div>
 
             <!-- svg -->
             <div class="cntSvg">
-                <!-- aqui -->
+                <img src="images/Logo-tiktok.svg" alt="Logo animado" />
+
             </div>
 
             <!-- fragmento de css (parte de los @keyframes) -->
             <div class="cntCode">
                 <p>Código CSS (fragmento)</p> <br>
                 <code>
+                    <div class="cntCode">
+<p>Código CSS (fragmento)</p>
+<code>
+    /* Animación de rotación del logo */ <br>
+    .logoAnimado { <br>
+    &nbsp;&nbsp;transform-origin: center;<br>
+    &nbsp;&nbsp;animation: girar 4s ease-in-out infinite;<br>
+    }<br><br>
+
+    @keyframes girar { <br>
+    &nbsp;&nbsp;0% { transform: rotate(0deg); }<br>
+    &nbsp;&nbsp;100% { transform: rotate(360deg); }<br>
+    }
+  </code>
+</div>
 
                 </code>
      
