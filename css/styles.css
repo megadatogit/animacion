@@ -9,7 +9,7 @@ font-family: 'Ubuntu';
 .bg-gradient-danger {
   background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
   background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  animation: gradient-animation 9s ease infinite;
 }
 
 @keyframes gradient-animation {

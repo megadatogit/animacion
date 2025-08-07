@@ -1,75 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <title>Actividad 3 Grupal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-          <link rel="stylesheet" href="css/styles.css">
-</head>
-    <body class="p-0 d-flex vw-100 vh-100 justify-content-center align-items-center bg-gradient-danger">
-        <main class="d-flex flex-column w-70 h-70 bg-light w-50 rounded-5 p-5">
-            <h2 class="mb-4">Formulario de Registro</h2>
-            <div class="mb-3">
-                <p class="text-body fs-6">
-                    Intentos Exitosos: <span class="text-success" id="iSuccess">0</span>
-                </p>
-                <p class="text-body fs-6">
-                    Intentos Fallidos: <span class="text-danger" id="iFail">0</span>
-                </p>
-            </div>           
-            <form id="registroForm" action="#">
-                <!-- Cadena -->
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" required>
-                </div>
-
-                <!-- Cadena -->
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-
-                <!-- Numérico -->
-                <div class="mb-3">
-                    <label for="edad" class="form-label">Edad</label>
-                    <input type="number" class="form-control" id="edad" required>
-                </div>
-
-                <!-- Fecha -->
-                <div class="mb-3">
-                    <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
-                    <input type="date" class="form-control" id="fechaNacimiento" required>
-                </div>
-
-                <!-- Booleano (checkbox) -->
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" id="terminos">
-                    <label class="form-check-label" for="terminos">Acepto términos y condiciones</label>
-                </div>
-
-                <!-- Booleano (select sí/no) -->
-                <div class="mb-3">
-                    <label for="noticias" class="form-label">¿Deseas recibir noticias?</label>
-                    <select class="form-select" id="noticias">
-                        <option value="true">Sí</option>
-                        <option value="false">No</option>
-                    </select>
-                </div>
-
-                <!-- Botones -->
-                
-                <button type="button" class="btn btn-light" id="resetBtn">Limpiar</button>
-                <button type="button" class="btn btn-primary" id="btnRegistrar" disabled="disabled">Registrar</button>
-            </form>
-
-        </main>
-    </body>
-
-    <script src="js/formValidator.js"></script>
+   <head>
+      <meta charset="UTF-8" />
+      <title>Actividad 3 Grupal</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body class="p-0 d-flex vw-100 min-vh-100 justify-content-center align-items-center bg-gradient-danger p-5">
+      <main class="bg-light d-flex flex-column my-auto p-5 rounded-5 w-75">
+         <h2 class="fs-1 mb-4 text-center">Formulario de Registro</h2>
+         <div class="d-flex flex-column mb-3 text-end">
+            <p class="fs-6 mb-0 text-success">
+               Intentos Exitosos: <span id="iSuccess" class="text-success">0</span>
+            </p>
+            <p class="fs-6 mb-0 text-danger">
+               Intentos Fallidos: <span id="iFail" class="text-danger">0</span>
+            </p>
+         </div>
+         <form id="registroForm" action="#">
+            <!-- Cadena -->
+            <div class="mb-4">
+               <label for="nombre" class="form-label fs-4 mb-0 text-dark">Nombre</label>
+               <input type="text" id="nombre" class="border-dark form-control" required>
+            </div>
+            <!-- Cadena -->
+            <div class="mb-4">
+               <label for="email" class="form-label fs-4 mb-0 text-dark">Correo Electrónico</label>
+               <input type="email" id="email" class="border-dark form-control" required>
+            </div>
+            <!-- Numérico -->
+            <div class="mb-4">
+               <label for="edad" class="form-label fs-4 mb-0 text-dark">Edad</label>
+               <input type="number" id="edad" class="border-dark form-control" required>
+            </div>
+            <!-- Fecha -->
+            <div class="mb-4">
+               <label for="fechaNacimiento" class="form-label fs-4 mb-0 text-dark">Fecha de Nacimiento</label>
+               <input type="date" id="fechaNacimiento" class="border-dark form-control" required>
+            </div>
+            <!-- Booleano (checkbox) -->
+            <div class="align-items-center d-flex form-check mb-4">
+               <input type="checkbox" id="terminos" class="border-dark form-check-input">
+               <label for="terminos" class="form-check-label fs-3 ps-2">Acepto términos y condiciones</label>
+            </div>
+            <!-- Booleano (select sí/no) -->
+            <div class="mb-4">
+               <label for="noticias" class="form-label fs-4 mb-0 text-dark">¿Deseas recibir noticias?</label>
+               <select id="noticias" class="border-dark form-select">
+                  <option value="true">Sí</option>
+                  <option value="false">No</option>
+               </select>
+            </div>
+            <!-- Botones -->
+            <div class="align-items-center d-flex gap-3 justify-content-center w-100">
+               <button type="button" id="resetBtn" class="btn btn-light">Limpiar</button>
+               <button type="button" id="btnRegistrar" class="btn btn-primary" disabled="disabled">Registrar</button>
+            </div>
+         </form>
+      </main>
+   </body>
+   <script src="js/formValidator.js"></script>
 </html>
